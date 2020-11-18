@@ -14,13 +14,13 @@ spring:
 #    topic:
 #      userCreated: USER_CREATED_TOPIC
   cloud:
-    stream:
-      kafka:
-        binder:
-          brokers:
-          - http://18.188.152.98:9092
-      bindings:
-        output:
-          destination: USER_CREATED_TOPIC      
+     stream:
+       kafka:
+         binder:
+           brokers:
+           - http://localhost:9092
+       bindings:
+         output:
+           destination: USER_CREATED_TOPIC     
 server:
   port: 8083
